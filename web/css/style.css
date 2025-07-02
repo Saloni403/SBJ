@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body{
+    font-family: none;
+    background-color: rgba(240,230,140, 0.5);
+}
+.libertinus-mono-regular {
+  font-family: "Libertinus Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* top nav */
+.topnav{
+    background-color: rgb(248, 231, 230);
+}
+.topnav i{
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+.topnav li a{
+    margin-left: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    color: rgb(138, 18, 16);
+}
+@media(max-width:767px){
+    .topnav span{
+    display: none;
+}
+}
+@media(max-width:375px){
+    .topnav i{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.topnav li a{
+margin-left: 0.75rem;
+}
+}
+
+/* nav-bar */
+.nav-bar{
+   background-color: rgba(240,230,140, 0.8);
+   backdrop-filter: blur(10px);
+   z-index: 98;
+}
+.nav-bar li a{
+    font-size: 1.1rem;
+   margin-left: 1.5rem;
+    color: rgb(0 0 0);
+    font-weight: 400;
+}
+@media(max-width:992px){
+    .nav-bar li a{
+    margin-left: 1.1rem;
+}
+}
+.nav-bar i{
+    font-size: 1.1rem;
+    color: rgb(0 0 0);
+}
+.nav-bar li a:hover{
+     color: rgb(138, 18, 16);
+     padding-bottom: 5px;
+   border-bottom: 3px solid rgb(138, 18, 16);
+}
+.activemenu{
+     padding-bottom: 5px;
+     border-bottom: 3px solid rgb(138, 18, 16);
+}
+.nav-bar i:hover{
+       color: rgb(138, 18, 16);
+}
+/* nav bar */
+.menu{
+    width: 300px;
+    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    position: fixed;
+    right: -350px;
+    top:0;
+    line-height: 3;
+    background-color: rgba(128, 0, 0, 0.8);
+   backdrop-filter: blur(10px);
+   z-index: 99;
+  transition: 0.3s ease;
+}
+.menu a{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.closemenu{
+    font-size: 1.5rem;
+    background-color: #fff;
+    padding: 16px 18px;
+    border-radius: 50%;
+}
+/* Exploring */
+.exploring i{
+    font-size: 4rem;
+    color: rgb(138, 18, 16);
+}
+.exploring p{
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-left: 1rem;
+      color: rgb(138, 18, 16);
+}
+.exploring .row .col-lg-4 div{
+    background-color:  rgb(248, 231, 230);
+    border-radius: 1rem;
+   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.exploring .row .col-lg-4 div:hover{
+    background-color:rgb(245, 245, 89);
+  
+}
+/* category */
+    .sbc{
+       background-image: url(../images/WhatsApp\ Image\ 2025-07-02\ at\ 1.36.47\ PM.jpeg);
+    }
+.carddes{
+    margin: 0 0.25rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+  
+}
+.carddes img{
+    border-radius: 10px;
+     transition: transform 0.3s ease;
+}
+.carddes .carddesimg{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.carddes:hover img {
+    transform: scale(1.25);
+}
+
+.carddes p{
+font-size: 1.5rem;
+ color: rgb(138, 18, 16);
+
+}
+.carddes a{
+    color: #000;
+}
+.carddes a:hover{
+    color: rgb(100, 100, 100);
+}
+/* .btndes{
+    font-size: 1.25rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+     background-color:rgb(245, 245, 89);
+    color: rgb(138, 18, 16);
+    border: none;
+} */
+
+.btndes {
+    font-size: 1.25rem;
+    padding: 5px 20px;
+    border-radius: 12px;
+    background-color: #ffd966; /* soft golden yellow */
+    color: #6b0101; /* deep maroon */
+    border: none;
+    box-shadow: 0 4px 10px rgba(107, 1, 1, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btndes:hover {
+    background-color: #ffe891;
+    color: #3d0000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(107, 1, 1, 0.4);
+}
+.btndesoutline{
+     font-size: 1.25rem;
+    padding: 5px 20px;
+    border-radius: 12px;
+    /* background-color: #ffd966;  */
+    color: #6b0101; /* deep maroon */
+    background-color: transparent;
+    border: 2px solid #ffd966;
+    box-shadow: 0 4px 10px rgba(107, 1, 1, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.btndesoutline:hover {
+    background-color: #ffd966;
+    color: #3d0000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(107, 1, 1, 0.4);
+}
+/* shop by budget */
+.sbbcard{
+ position: relative;
+ border-radius: 10px;
+}
+.sbb img{
+   border-radius: 10px;
+}
+.btndes2{
+    width: 80%;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color:rgb(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    border: none;
+      position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Newest A */
+.offerbtn{
+    background-color: antiquewhite;
+   color: rgb(138, 18, 16);
+}
+.Offer{
+width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.offer button:data
+.NewA h5{
+   
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+.NewA img{
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* stay with us */
+.inputarea{
+    background-color: #fff;
+    width: 50%;
+    padding: 0 0 0 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(max-width:768px){
+    .inputarea{
+        width: auto;
+    }
+}
+.inputbtn{
+    background-color: #000;
+    color: #fff;
+}
+.inputbtn:hover{
+  background-color:rgb(245, 245, 89);
+    color: rgb(138, 18, 16);
+}
+.stay input{
+    border: none;
+    background-color: transparent;
+}
+
+/* footer */
+footer p{
+    margin-bottom: 0 !important;
+}
+.followicons{
+    font-size: 1.5rem;
+
+}
+.followicons i{
+    border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 5px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+footer h4{
+    font-weight: 600;
+    border-bottom:2px solid maroon;
+}
+footer a{
+  color: rgb(138, 18, 16);
+}
+footer{
+/* background-color: #3e3e3e; */
+ background-color: rgb(248, 231, 230);
+ color: rgb(138, 18, 16);
+}
