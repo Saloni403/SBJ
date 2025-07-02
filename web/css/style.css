@@ -6,7 +6,7 @@
 }
 body{
     font-family: none;
-    background-color: rgba(240,230,140, 0.5);
+    background-color: rgb(252, 248, 216);
 }
 .libertinus-mono-regular {
   font-family: "Libertinus Mono", monospace;
@@ -132,7 +132,7 @@ margin-left: 0.75rem;
    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 .exploring .row .col-lg-4 div:hover{
-    background-color:rgb(245, 245, 89);
+    background-color: #ffd966;
   
 }
 /* category */
